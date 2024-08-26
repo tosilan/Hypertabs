@@ -16,7 +16,7 @@
         -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>New Hypertab</title>
+		<title>新しいタブ</title>
 		<link rel="stylesheet" href="/css/css.css" />
 	</head>
 
@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="center">
-			<h1 id="headtxt">Hypertabs</h1>
+			<h1 id="headtxt">VCloud</h1>
 			<forum
 				id="input"
 				onkeydown="if(event.key == 'Enter'){location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`}"
@@ -60,22 +60,25 @@
 			<div class="btns">
 				<!-- idea: maybe include __uv$config.prefix with xor.encode -->
 				<div
-					onclick="location.href=__uv$config.prefix+xor.encode('https://music.youtube.com')"
-					class="crm"
-				>
-					<img class="icn" src="/bookmark.png" />
-					<a class="btn">Music</a>
-				</div>
-				<div onclick="location.href='/c.html'" class="crm">
-					<img class="icn" src="/icon.png" />
-					<a class="btn">Contributors</a>
-				</div>
-				<div
-					onclick="location.href=__uv$config.prefix+xor.encode('https://discord.gg/J3VPy5Vy8x')"
+					onclick="location.href=__uv$config.prefix+xor.encode('https://youtube.com')"
 					class="crm"
 				>
 					<img class="icn" src="/dcd.png" />
-					<a class="btn">Join Discord</a>
+					<a class="btn">YouTube</a>
+				</div>
+				<div
+					onclick="location.href=__uv$config.prefix+xor.encode('https://sites.google.com/view/vcloudinstance/%E3%83%9B%E3%83%BC%E3%83%A0')"
+					class="crm"
+				>
+					<img class="icn" src="/dcd.png" />
+					<a class="btn">インスタンス</a>
+				</div>
+				<div
+					onclick="location.href=__uv$config.prefix+xor.encode('https://google.com/')"
+					class="crm"
+				>
+					<img class="icn" src="/dcd.png" />
+					<a class="btn">Google</a>
 				</div>
 			</div>
 		</div>
