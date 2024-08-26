@@ -69,8 +69,8 @@
   <div class='surface'>
     <div class='mock-browser'>
       <div id="ctx" class="dropdown-content" style="top:0px;left:0px;right:auto;z-index:99">
-        <a class="pointer" id="pin" onclick="toggleId('ctx');chromeTabs.pinTab(ctxTab)">Pin tab</a> 
-        <a class="pointer" style="margin-left: 0px;"onclick="toggleId('ctx');newTab('ht://newtab')">New tab</a>
+        <a class="pointer" id="pin" onclick="toggleId('ctx');chromeTabs.pinTab(ctxTab)">ピン留め</a> 
+        <a class="pointer" style="margin-left: 0px;"onclick="toggleId('ctx');newTab('ht://newtab')">新しいタブ</a>
         <a class="pointer"
           onclick="toggleId('ctx');newTab(document.getElementById(parseInt(ctxTab) + 1).contentWindow.location.href,false);">Duplicate</a>
           <a class="pointer"
@@ -148,17 +148,17 @@
       <div id='optionsdrop' class='dropdown-content'>
          <a class="pointer" onclick='toggleId("optionsdrop");'>back</a>
         <a class="pointer"
-          onclick='toggleId("optionsdrop");document.querySelector("body").requestFullscreen()'>Fullscreen window</a>
+          onclick='toggleId("optionsdrop");document.querySelector("body").requestFullscreen()'>フルスクリーンで表示</a>
         <a class="pointer"
-          onclick='toggleId("optionsdrop");skipAd()'>Skip YT AD</a>
+          onclick='toggleId("optionsdrop");skipAd()'>YT広告スキップ</a>
         <!-- <a class="pointer" onclick='toggleId("optionsdrop", "uadrop");'>Set user agent</a> Disabled until I finish adding support-->
-        <a class="pointer" onclick='toggleId("optionsdrop", "searchDrop")'>Set search engine</a>
-        <a class="pointer" onclick='inspect(); toggleId("optionsdrop");'>Open devtools</a>
+        <a class="pointer" onclick='toggleId("optionsdrop", "searchDrop")'>検索エンジンを設定する</a>
+        <a class="pointer" onclick='inspect(); toggleId("optionsdrop");'>開発ツール</a>
         <!-- <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a> Disabled until themes have been reworked -->
         <!-- <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop");'>Extensions</a> not yet :(-->
       </div>
       <div id="uadrop" class=dropdown-content>
-        <a class="pointer tooldivd" onclick='toggleId("uadrop", "optionsdrop");'>back</a>
+        <a class="pointer tooldivd" onclick='toggleId("uadrop", "optionsdrop");'>戻る</a>
         <div class="dividersua"></div>
         <a>Set The Useragent (currently not working)</a>
         <a class="pointer inp"><input class="aa" id="ua" type='text' /></a>
