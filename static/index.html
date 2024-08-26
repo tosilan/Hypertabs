@@ -76,9 +76,9 @@
           <a class="pointer"
           onclick="toggleId('ctx');AddBookmark(parseInt(ctxTab) + 1);">Bookmark</a>
         <a class="pointer"
-          onclick="toggleId('ctx');chromeTabs.removeTab(document.querySelectorAll('[ifd=\'' + ctxTab + '\']')[0]);document.getElementById(parseInt(ctxTab) + 1).remove()">Close</a>
+          onclick="toggleId('ctx');chromeTabs.removeTab(document.querySelectorAll('[ifd=\'' + ctxTab + '\']')[0]);document.getElementById(parseInt(ctxTab) + 1).remove()">閉じる</a>
         <a class="pointer"
-          onclick="toggleId('ctx');document.getElementById(parseInt(ctxTab)+1).contentWindow.location.reload()">Reload</a>
+          onclick="toggleId('ctx');document.getElementById(parseInt(ctxTab)+1).contentWindow.location.reload()">再読み込み</a>
       </div>
       <div class='chrome-tabs chrome-tabs-dark-theme' id="tabsmain" style='--tab-content-margin: 9px'>
         <div class='chrome-tabs-content' id='0'>
@@ -146,7 +146,7 @@
       </div>
       <!-- todo, javascript based dropdown menu  -->
       <div id='optionsdrop' class='dropdown-content'>
-         <a class="pointer" onclick='toggleId("optionsdrop");'>back</a>
+         <a class="pointer" onclick='toggleId("optionsdrop");'>戻る</a>
         <a class="pointer"
           onclick='toggleId("optionsdrop");document.querySelector("body").requestFullscreen()'>フルスクリーンで表示</a>
         <a class="pointer"
@@ -165,7 +165,7 @@
         <a class="pointer" onclick='document.cookie=`cua=${localStorage.getItem("ua")}`; toggleId("uadrop");'>Apply</a>
       </div>
       <div id="searchDrop" class="dropdown-content">
-        <a class="pointer tooldivd" onclick='toggleId("searchDrop", "optionsdrop");'>back</a>
+        <a class="pointer tooldivd" onclick='toggleId("searchDrop", "optionsdrop");'>戻る</a>
         <div class="dividerext"></div>
         <a class="pointer th">Type the url plus search scheme of your engine.<input class="aa" id='customSearch'
             type='text' placeholder="https://google.com/search?q=" /></a>
@@ -174,7 +174,7 @@
         <a></a>
       </div>
       <div id="themedrop" class='dropdown-content'>
-        <a class="pointer tooldivd" onclick='toggleId("themedrop", "optionsdrop");'>back</a>
+        <a class="pointer tooldivd" onclick='toggleId("themedrop", "optionsdrop");'>戻る</a>
         <div class="divider"></div>
         <a class="pointer" onclick='applyTheme("Dark"); toggleId("themedrop");'>Dark Theme</a>
         <a class="pointer" onclick='applyTheme("Light"); toggleId("themedrop");'>Light Theme</a>
