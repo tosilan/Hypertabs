@@ -9,5 +9,14 @@
     { "src": "/","dest": "/static/index.html" },
     { "src": "/uv/service/(.*)","dest": "/static/uv/$1" },
     { "src": "/.*","dest": "src/index.js" }
+  ],
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/.*", "dest": "app.js" }
   ]
 }
