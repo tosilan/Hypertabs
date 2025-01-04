@@ -1,7 +1,7 @@
 const protect = require('static-auth');
 const safeCompare = require('safe-compare');
 
-const USER_NAME = 'VCloud';
+const USER_NAME = 'GigaSchoolHub';
 const PASSWORD = '169235623';
 
 const app = protect(
